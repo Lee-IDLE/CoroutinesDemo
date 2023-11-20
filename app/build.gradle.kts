@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "eu.tutorials.coroutinesdemo"
-    compileSdk = 33
+    compileSdkVersion(rootProject.extra["compileSdkVersion"] as Int)
 
     defaultConfig {
         applicationId = "eu.tutorials.coroutinesdemo"
